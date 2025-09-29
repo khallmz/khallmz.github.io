@@ -52,14 +52,12 @@
       color:var(--text); border-radius:999px; padding:8px 12px; cursor:pointer; font-weight:600}
     .theme-toggle:focus{outline:2px solid var(--accent)}
 
-    /* Mobile tweaks */
+    /* Mobile tweaks — more air */
     @media (max-width:420px){
       .wrap{padding:40px 16px}
       .links{gap:16px}
       .link{padding:18px 18px; border-radius:16px}
       .link small{padding:4px 10px}
-      h1{font-size:28px}
-    }
       h1{font-size:28px}
     }
   </style>
@@ -74,35 +72,48 @@
     <p class="tagline">Music & visuals for brands • Video editing · 3D · Motion design • 👇 All links below</p>
 
     <div class="links">
+      <!-- Licensing / portfolio -->
       <a class="link" aria-label="My tracks portfolio on Pond5" href="https://www.pond5.com/artist/VIDSTER?ref=VIDSTER" target="_blank" rel="noopener">
-        <span>🎧 My tracks on Pond5</span><small>portfolio</small>
+        <span>🎧 My Tracks on Pond5</span><small>portfolio</small>
       </a>
       <a class="link" aria-label="AudioJungle portfolio" href="https://audiojungle.net/user/fxsam" target="_blank" rel="noopener">
-        <span>🎵 AudioJungle — portfolio</span><small>licensing</small>
+        <span>🎵 AudioJungle — Portfolio</span><small>licensing</small>
       </a>
+
+      <!-- Promo -->
       <a class="link" aria-label="Get 20 percent off first order on Pond5" href="https://www.pond5.com/?ref=VIDSTER" target="_blank" rel="noopener">
-        <span>🛒 −20% first order on Pond5</span><small>ref</small>
+        <span>🛒 −20% First Order on Pond5</span><small>ref</small>
       </a>
+
+      <!-- Content -->
       <a class="link" aria-label="YouTube Visual Craft Studio" href="https://www.youtube.com/@visualcraftstudio2025" target="_blank" rel="noopener">
         <span>📺 YouTube — Visual Craft Studio</span><small>music & visuals</small>
       </a>
+
+      <!-- Hire -->
       <a class="link" aria-label="Upwork profile" href="https://upwork.com/freelancers/mikhailzigmuntov" target="_blank" rel="noopener">
-        <span>💼 Upwork profile</span><small>hire me</small>
+        <span>💼 Upwork Profile</span><small>hire me</small>
       </a>
       <a class="link" aria-label="Freelancehunt profile" href="https://freelancehunt.com/freelancer/khallmz.html?r=mkGLE" target="_blank" rel="noopener">
-        <span>💼 Freelancehunt profile</span><small>hire me</small>
+        <span>💼 Freelancehunt Profile</span><small>hire me</small>
       </a>
-      <a class="link" aria-label="Amazon project example" href="https://www.amazon.de/MUSTANG-Schlafanzug-Nachtw%C3%A4sche-Oeko-TEX-Standard/dp/B0DV5KJVKX/ref/pd_rhf_se_s_ci_mcx_mr_hp_d_d_sccl_2_1/259-7312605-8427045?pd_rd_w=zlHm5&content-id=amzn1.sym.7ff5a09a-fbaa-4881-8d14-084d491c29f8%3Aamzn1.symc.1b44a113-f80b-4bad-946d-45e84e3d8ccf&pf_rd_p=7ff5a09a-fbaa-4881-8d14-084d491c29f8&pf_rd_r=V44NG4PC042PPS8KX6MB&pd_rd_wg=kYLJO&pd_rd_r=3b1e14cf-ce88-426c-b95e-19fe666514a1&pd_rd_i=B0DV5KJVKX&th=1&psc=1" target="_blank" rel="noopener">
-        <span>🛍️ Amazon project example</span><small>case study</small>
+
+      <!-- Case / example -->
+      <a class="link" aria-label="Amazon project example" href="https://www.amazon.de/dp/B0DV5KJVKX" target="_blank" rel="noopener">
+        <span>🛍️ Amazon Project Example</span><small>case study</small>
       </a>
+
+      <!-- Social -->
       <a class="link" aria-label="LinkedIn profile" href="https://www.linkedin.com/in/zigmuntov/" target="_blank" rel="noopener">
         <span>🔗 LinkedIn</span><small>networking</small>
       </a>
       <a class="link" aria-label="Instagram @zihorion" href="https://instagram.com/zihorion" target="_blank" rel="noopener">
         <span>📷 Instagram</span><small>@zihorion</small>
       </a>
-      <a class="link" aria-label="Email me" href="mailto:khallmz69@gmail.com">
-        <span>✉️ Email me</span><small>one‑stop</small>
+
+      <!-- Contact -->
+      <a class="link" aria-label="Email me" href="mailto:khallmz69@gmail.com?subject=Project%20inquiry%20%E2%80%94%20Zihorion&body=Hi%20Zihorion%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project.%20Here%E2%80%99s%20a%20brief%3A%20">
+        <span>✉️ Email Me</span><small>one-stop</small>
       </a>
     </div>
 
@@ -116,7 +127,6 @@
       const btn = document.querySelector('.theme-toggle');
       const apply = (theme) => {
         root.setAttribute('data-theme', theme);
-        // update theme-color meta to match theme bg
         const tc = document.querySelector('meta[name="theme-color"]');
         tc && tc.setAttribute('content', theme === 'light' ? '#f7f7fb' : '#0b0b0f');
         btn.textContent = theme === 'light' ? '🌚' : '🌙';
