@@ -3,21 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Zihorion</title>
+  <title>Zihorion — Links</title>
   <meta name="description" content="Music & visuals for brands • Video editing · 3D · Motion design" />
   <meta name="theme-color" content="#0b0b0f" />
   <meta name="color-scheme" content="light dark" />
 
   <!-- Favicon + social preview -->
   <link rel="icon" type="image/png" href="favicon.png" />
-  <meta property="og:title" content="Zihorion" />
+  <meta property="og:title" content="Zihorion — Links" />
   <meta property="og:description" content="Music & visuals for brands • Video editing · 3D · Motion design" />
   <meta property="og:image" content="https://zihorion.github.io/og.png" />
   <meta property="og:url" content="https://zihorion.github.io" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <style>
-    /* ---------- THEME TOKENS ---------- */
     :root{
       --bg:#0b0b0f; --card:#141418; --text:#e8e8ef; --muted:#9aa0a6; --accent:#8b5cf6; --hover:#1b1b22;
       --chip:#1c1e26; --chip-text:#aeb1c7; --border:#1f1f29; --shadow:0 8px 22px rgba(107,111,222,.18);
@@ -26,33 +25,23 @@
       --bg:#f7f7fb; --card:#ffffff; --text:#111318; --muted:#5c6370; --accent:#6b6fde; --hover:#f0f2f7;
       --chip:#eef0f6; --chip-text:#505769; --border:#e6e8f0; --shadow:0 8px 22px rgba(107,111,222,.14);
     }
-
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--text);
       font:16px/1.45 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif}
     .wrap{max-width:720px;margin:0 auto;padding:48px 20px; position:relative}
-
-    /* Large round logo */
     .avatar{width:128px;height:128px;border-radius:999px;object-fit:cover;border:2px solid var(--accent)}
-
-    h1{margin:20px 0 10px;font-size:32px}
+    h1{margin:20px 0 10px;font-size:32px; letter-spacing:.5px}
     .tagline{color:var(--muted);margin:0 0 28px}
-
     .links{display:grid;gap:12px}
     .link{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-radius:14px;
       background:var(--card);color:var(--text);text-decoration:none;border:1px solid var(--border);
       transition:background .15s, transform .08s, box-shadow .2s, border-color .2s}
     .link:hover{background:var(--hover); border-color:var(--accent); box-shadow:var(--shadow); transform:translateY(-1px)}
     .link small{background:var(--chip); border-radius:10px; padding:3px 8px; color:var(--chip-text)}
-
     footer{margin-top:28px;color:var(--muted);font-size:12px}
-
-    /* Theme toggle */
     .theme-toggle{position:absolute; top:18px; right:18px; border:1px solid var(--border); background:var(--card);
       color:var(--text); border-radius:999px; padding:8px 12px; cursor:pointer; font-weight:600}
     .theme-toggle:focus{outline:2px solid var(--accent)}
-
-    /* Mobile tweaks — more air */
     @media (max-width:420px){
       .wrap{padding:40px 16px}
       .links{gap:16px}
@@ -66,8 +55,7 @@
   <main class="wrap">
     <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
 
-    <!-- Logo: logo.png should be in repo root -->
-    <img class="avatar" src="logo.png" alt="Zihorion.github.io logo" />
+    <img class="avatar" src="logo.png" alt="Zihorion logo" />
     <h1>ZIHORION</h1>
     <p class="tagline">Music & visuals for brands • Video editing · 3D · Motion design • 👇 All links below</p>
 
@@ -112,7 +100,7 @@
       </a>
 
       <!-- Contact -->
-      <a class="link" aria-label="Email me" href="mailto:zihorion.studio@gmail.com?subject=Project%20inquiry%20%E2%80%94%20Zihorion&body=Hi%20Zihorion%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project.%20Here%E2%80%99s%20a%20brief%3A%20">
+      <a class="link" aria-label="Email me" href="mailto:zihorion.studio@gmail.com?subject=Project%20inquiry%20%E2%80%94%20ZIHORION&body=Hi%20ZIHORION%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project.%20Here%E2%80%99s%20a%20brief%3A%20">
         <span>✉️ Email Me</span><small>one-stop</small>
       </a>
     </div>
@@ -121,7 +109,6 @@
   </main>
 
   <script>
-    // Theme detection + toggle with localStorage
     (function(){
       const root = document.documentElement;
       const btn = document.querySelector('.theme-toggle');
